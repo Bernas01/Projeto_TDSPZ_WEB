@@ -1,22 +1,19 @@
-
-
-function Menu (){
-
+function Menu() {
     const menu = {
-        background:'red',
-        display:'flex',
-        justifyContent:'center'
-    }
+        background: 'black', 
+        display: 'flex',
+        justifyContent: 'center'
+    };
 
     const link = {
         display: 'inlineBlock',
         textDecoration: 'none',
         padding: '20px',
-        color: '#fff',
-        fontSize: '15px'
-    }
+        color: '#fff', 
+        fontSize: '20px'
+    };
 
-    return(
+    return (
         <>
             <nav style={menu}>
                 <ul style={link}>
@@ -25,8 +22,8 @@ function Menu (){
                     <li><a href="/sobre" style={link}>SOBRE</a></li>
                 </ul>
             </nav>
-            
         </>
-    )
+    );
 }
+
 export default Menu;

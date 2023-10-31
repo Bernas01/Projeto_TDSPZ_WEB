@@ -4,7 +4,7 @@
 function Carro(props) {
     return(
         <>
-            <h1>LISTA DE CARROS</h1>
+            <h1>Tecnologia</h1>
 
             <ul>
                     <li>{ props.carroValorPai[0] }</li>

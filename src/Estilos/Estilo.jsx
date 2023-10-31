@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-
 export const LightTheme = {
-    corFundo: 'honeydew',
-    corTexto: 'maroon',
-    corTitulo: 'red'
+    corFundo: 'white',
+    corTexto: 'black',
+    corTitulo: 'black', // ajustando para texto preto para melhor visibilidade
+    corBotao: 'blue', // adicionando uma cor para o botão
 }
 
 export const DarkTheme = {
@@ -13,25 +13,22 @@ export const DarkTheme = {
     corTitulo: '#fffdd0'
 }
 
-// Criando uma div
 export const Container = styled.div`
     background-color: ${props => props.theme.corFundo};
     color: ${props => props.theme.corTexto};
 `
 
-// Criando um botão
 export const Button = styled.button`
     padding: 10px;
-    border: none;
-    background-color: #4caf50;
-    color: white
+    border: 2px solid ${props => props.theme.corBotao}; /* Adicionando borda ao botão com a cor azul definida no LightTheme */
+    background-color: transparent; /* Tornando o fundo do botão transparente para mostrar o fundo da página */
+    color: ${props => props.theme.corTexto};
     margin: 10px;
 `
 
-// Criando um título
 export const TitlePage = styled.h1`
-    color: red;
-    font-size: 20px;
+    color: ${props => props.theme.corTitulo};
+    font-size: 30px;
 `
 
 export const InformacoesCep = styled.div`
@@ -40,8 +37,6 @@ export const InformacoesCep = styled.div`
     flex-direction: column;
 `
 
-
-// Criando uma div para formulários
 export const DivForm = styled.div`
     display: inline;
     background-color: #FFF;

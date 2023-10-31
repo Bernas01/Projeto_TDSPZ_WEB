@@ -17,9 +17,7 @@ function App (){
   return(
     <>
       <ThemeProvider theme={theme === 'light' ? LightTheme : DarkTheme}>
-      <h1>CONFIGURAÇÃO DE UM LOGO</h1>
-
-      <Button onClick={mudarTheme}>BOTÃO</Button>
+      <h1></h1>
 
       <hr/>
         <Container>
